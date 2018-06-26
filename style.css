@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url('cursor/pointer.png'), auto;
+    cursor: -webkit-image-set( url('cursor/pointer_mini.png') 1x, url('cursor/pointer.png') 2x), auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    user-select: none;
+  }
+  
+  body {
+    background-color: #ededed;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  a, a:link, a:visited, a:active {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  p {
+    font-family: "schola", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    color: #000;
+    line-height: 1.35;
+    text-align: left;
+  }
+  
+  @font-face {
+    font-family: 'MapleWebRegular';
+    src: url('fonts/MapleWebRegular.eot');
+    src: url('fonts/MapleWebRegular.eot?#iefix') format('embedded-opentype'), url('fonts/MapleWebRegular.woff2') format('woff2'), url('fonts/MapleWebRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'schola';
+    src: url('fonts/schola.woff');
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .wrapper {
+    height: 100vh;
+  }
+  
+  .playbutton, .vidbutton, .vidbutton-mobile {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .playbutton{
+    z-index: 200;
+    background: url(newmov.mov) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .playbutton-mobile {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    background: url(newmov.mov) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .vidbutton {
+    z-index: 100;
+  }
+  
+  video#vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    background: url(newmov.mov) no-repeat;
+    background-size: cover;
+  }
+  
+  video#vidMobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    background: url(newmov.mov) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  
+  .text {
+    display: none;
+    width: 90vw;
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  .contact {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: black;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    text-align: left;
+  }
+  
+  .hover {
+    pointer-events: none;
+    transform: translate(48px, -2px);
+    position: absolute;
+  }
+  
+  .pointer {
+    transform: translate(26px, -2px);
+  }
+  
+  .click {
+    cursor: url('cursor/click.png'), auto;
+    cursor: -webkit-image-set( url('cursor/click_mini.png') 1x, url('cursor/click.png') 2x), auto;
+  }
+  
+  .meimg, .litimg, .eyeimg, .handimg, .stoicimg, .typeimg, .beerimg, .blankimg, .blodimg {
+    max-width: 400px;
+    max-height: 400px;
+    display: none;
+  }
+  
+  .melink:hover+.meimg {
+    display: block;
+  }
+  
+  .litlink:hover+.litimg {
+    display: block;
+  }
+  
+  .handlink:hover+.handimg {
+    display: block;
+  }
+  
+  .eyelink:hover+.eyeimg {
+    display: block;
+  }
+  
+  .stoiclink:hover+.stoicimg {
+    display: block;
+  }
+  
+  .typelink:hover+.typeimg {
+    display: block;
+  }
+  
+  .beerlink:hover+.beerimg {
+    display: block;
+  }
+  
+  .blodlink:hover+.blodimg {
+    display: block;
+  }
+  
+  .blanklink:hover+.blankimg {
+    display: block;
+  }
+  
+  .osllink:hover+.oslimg {
+    display: block;
+  }
+  
+  .mobile, .playbutton-mobile, .vidbutton-mobile, video#vidMobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    p {
+      font-size: 30px;
+      display: inline;
+    }
+    img {
+      width: 100%;
+      display: none;
+    }
+    .vidbutton, .playbutton {
+      display: none;
+    }
+    video#vid {
+      display: none;
+    }
+    .playbutton-mobile, .vidbutton-mobile, video#vidMobile {
+      display: block;
+    }
+    .mobile, .contact {
+      padding: 15px;
+      overflow-x: hidden;
+    }
+    .text {
+      display: none;
+    }
+  }
