@@ -27,7 +27,7 @@
   }
   
   p {
-    font-family: "schola", sans-serif;
+    font-family: 'Amatic SC', 'Neucha';
     font-weight: normal;
     font-size: 50px;
     color: #000;
@@ -35,18 +35,16 @@
     text-align: left;
   }
   
-  @font-face {
-    font-family: 'MapleWebRegular';
-    src: url('fonts/MapleWebRegular.eot');
+  /* @font-face {
+    font-family: 'Amatic SC', cursive;
     src: url('fonts/MapleWebRegular.eot?#iefix') format('embedded-opentype'), url('fonts/MapleWebRegular.woff2') format('woff2'), url('fonts/MapleWebRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'schola';
-    src: url('fonts/schola.woff');
-  }
+    font-family: 'Amatic SC', cursive;
+  } */
   
   .hidden {
     display: none;
@@ -66,9 +64,18 @@
   
   .playbutton{
     z-index: 200;
-    background: url(newmov.mov) no-repeat;
+    background: url(bday.mov) no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 10%;
+    margin-left: 45px;
+    font-size: 70px;
+    color: white;
+    font-style: bold;
+    font-weight: 400;
   }
   
   .playbutton-mobile {
@@ -114,9 +121,9 @@
   
   .text {
     display: none;
-    width: 90vw;
+    width: 80vw;
     margin-left: 50px;
-    margin-right: auto;
+    margin-right: 100%;
     text-align: left;
   }
   
