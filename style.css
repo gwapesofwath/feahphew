@@ -205,9 +205,9 @@
     display: none;
   }
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 368px) {
     p {
-      font-size: 30px;
+      font-size: 10px;
       display: inline;
     }
     img {
